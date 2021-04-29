@@ -1,1 +1,456 @@
-[]
+[
+    {
+        "id": "d9c25930.79df78",
+        "type": "tab",
+        "label": "dashBoard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "bae23e14.6da62",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "enriquecrespo.com",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "260dab5d.186acc",
+        "type": "ui_tab",
+        "name": "Temperaturas",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8df5f6ec.b4a7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Dashboard ejemplo",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a15be545.aa576",
+        "type": "ui_group",
+        "name": "RasPi2",
+        "tab": "260dab5d.186acc",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ebce13c5.086398",
+        "type": "ui_tab",
+        "name": "Webcam",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9ed8273a.059c58",
+        "type": "ui_group",
+        "name": "Imagen Calahorra",
+        "tab": "ebce13c5.086398",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ab1538f1.bb732",
+        "type": "ui_group",
+        "name": "RasPi1",
+        "tab": "260dab5d.186acc",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "1e631b34.8ab96d",
+        "type": "ui_gauge",
+        "z": "d9c25930.79df78",
+        "name": "Enrique_RPi2",
+        "group": "a15be545.aa576",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Enrique_RPi2",
+        "label": "units",
+        "format": "{{value|number:2}}",
+        "min": "50",
+        "max": "70",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 360,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "42956153.23666",
+        "type": "ui_chart",
+        "z": "d9c25930.79df78",
+        "name": "ºC_cpu_RPi22",
+        "group": "a15be545.aa576",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "ºC_cpu_RPi2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "40",
+        "ymax": "70",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 360,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "155673bf.05882c",
+        "type": "mqtt in",
+        "z": "d9c25930.79df78",
+        "name": "Tempe2",
+        "topic": "aprendiendonodered21/enrique/raspberrypi2/enrique/Temperatura",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "bae23e14.6da62",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 190,
+        "y": 280,
+        "wires": [
+            [
+                "1e631b34.8ab96d",
+                "42956153.23666"
+            ]
+        ]
+    },
+    {
+        "id": "6c426736.95e9e",
+        "type": "mqtt in",
+        "z": "d9c25930.79df78",
+        "name": "Tempe1",
+        "topic": "aprendiendonodered21/enrique/raspberrypi1/enrique/Temperatura",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "bae23e14.6da62",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "a8a8d4a0.391728",
+                "771d15f.a5cd7ec"
+            ]
+        ]
+    },
+    {
+        "id": "a8a8d4a0.391728",
+        "type": "ui_gauge",
+        "z": "d9c25930.79df78",
+        "name": "Enrique_RPi1",
+        "group": "ab1538f1.bb732",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Enrique_RPi1",
+        "label": "units",
+        "format": "{{value|number:2}}",
+        "min": "50",
+        "max": "70",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 360,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "771d15f.a5cd7ec",
+        "type": "ui_chart",
+        "z": "d9c25930.79df78",
+        "name": "ºC_cpu_RPi1",
+        "group": "ab1538f1.bb732",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "ºC_cpu_RPi1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "40",
+        "ymax": "70",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 360,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "663dbec5.dcc618",
+        "type": "http request",
+        "z": "d9c25930.79df78",
+        "name": "",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "https://actualidad.larioja.org/images/webcam/calahorra.jpg",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 270,
+        "y": 460,
+        "wires": [
+            [
+                "660646cf.20b5d8"
+            ]
+        ]
+    },
+    {
+        "id": "660646cf.20b5d8",
+        "type": "change",
+        "z": "d9c25930.79df78",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mimetype",
+                "pt": "msg",
+                "to": "image/jpeg",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 460,
+        "wires": [
+            [
+                "f87bdb44.5f9af"
+            ]
+        ]
+    },
+    {
+        "id": "f87bdb44.5f9af",
+        "type": "ui_media",
+        "z": "d9c25930.79df78",
+        "group": "9ed8273a.059c58",
+        "name": "",
+        "width": 0,
+        "height": 0,
+        "order": 0,
+        "category": "",
+        "file": "",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 610,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5fd7c0e8.f12988",
+        "type": "ui_button",
+        "z": "d9c25930.79df78",
+        "name": "Pedir_imagen",
+        "group": "9ed8273a.059c58",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Pedir_imagen",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 460,
+        "wires": [
+            [
+                "663dbec5.dcc618"
+            ]
+        ]
+    }
+]
